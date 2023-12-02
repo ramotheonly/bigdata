@@ -1,4 +1,6 @@
 @import "{{ site.theme }}";
 section {
+  width: auto;
+  min-width: 500px;
   flex-grow: 1;
 }
