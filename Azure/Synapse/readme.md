@@ -9,4 +9,13 @@
 ## Compute - Dedicated SQL Pool
 * Code - Notebook - SQL scripts
 * SQL Warehouse Store - fully managed big data storage
- 
+
+
+<pre><code class="language-mermaid">graph LR
+A--&gt;B
+</code>
+</pre>
+
+<div class="mermaid">graph LR
+A--&gt;B
+</div>
