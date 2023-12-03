@@ -11,10 +11,11 @@ section {
   float: none;
 }
 
-@media print, screen and (max-width: 960px)
-section {
-  width: auto;
-  position: static;
-  left: 0px;
-  float: none;
+@media print, screen and (max-width: 960px) {
+  section {
+    width: auto;
+    position: static;
+    left: 0px;
+    float: none;
+  }
 }
