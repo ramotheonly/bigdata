@@ -1,3 +1,3 @@
-# Practical Bigdata Application Architecture, Designs and Tools
+# Practical Bigdata Application Design, Tools and Code snippets
 
 ## [Azure/Synapse](Azure/Synapse/)
