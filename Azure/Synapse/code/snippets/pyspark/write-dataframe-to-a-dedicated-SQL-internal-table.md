@@ -17,7 +17,7 @@ data_source_name = "<data-source-name>"
 dfToWrite.write
                .option(Constants.SERVER, f"{mssparkutils.env.getWorkspaceName()}.sql.azuresynapse.net")
              # .option(Constants.DATA_SOURCE, f"{data_source_name}>)
-               .mode("overwrite")
+               .mode("overwrite")      # other options => "error", "errorifexists", "append", "ignore"
                .synapsesql(f"{database_name}.{schema_name}.{table_name}")
 
 ```
@@ -33,7 +33,7 @@ write_to_path = "/path/to/ext/table"
 dfToWrite.write
                .option(Constants.SERVER, f"{mssparkutils.env.getWorkspaceName()}.sql.azuresynapse.net")
              # .option(Constants.DATA_SOURCE, f"{data_source_name}>)
-               .mode("overwrite")
+               .mode("overwrite")      # other options => "error", "errorifexists", "append", "ignore"
                .synapsesql(f"{database_name}.{schema_name}.{table_name}"
                               , Constants.EXTERNAL, write_to_path)
 
