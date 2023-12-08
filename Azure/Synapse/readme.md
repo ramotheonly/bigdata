@@ -1,21 +1,22 @@
-# Synapse - Spark Datalake + SQL Warehouse
+# Synapse
 
-## Compute - Spark Pool
+2 Types of Databases available
+
+## 1. Datalake - Compute = Spark pool
+
+Datalake Store - unmanaged (or self managed) file storage in ADLS Gen2 using csv, parquet and delta formats
+
+* ADLS Gen2 big data store (you have to manage)
 * Code - Notebook
   * %%pyspark, %%sql, %%csharp etc.
-  * mssparkutils in place of dbutils
-* Datalake Store - unmanaged (or self managed) file storage in ADLS Gen2 using csv, parquet and delta formats
-
-## Compute - Dedicated SQL Pool
-* Code - Notebook - SQL scripts
-* SQL Warehouse Store - fully managed big data storage
+  * Use **mssparkutils** in place of dbutils
 
 
-<pre><code class="language-mermaid">graph LR
-A--&gt;B
-</code>
-</pre>
+## 2. Dedicated SQL (Warehouse) - Compute = Dedicated SQL Pool
+* Fully managed SQL big data store
+* Code - Notebook
+  * SQL scripts
 
-<div class="mermaid">graph LR
-A--&gt;B
-</div>
+Snippet: 
+[Dedicated SQL to Pyspark Dataframe](code/snippets/pyspark/load-dataframe-from-a-dedicated-SQL-internal-table.md)
+
