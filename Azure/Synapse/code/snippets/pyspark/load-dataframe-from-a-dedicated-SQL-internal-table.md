@@ -4,7 +4,7 @@
 Dedicated SQL Query--&gt;Spark Dataframe
 </div>
 
-```
+```python
 import com.microsoft.spark.sqlanalytics
 from com.microsoft.spark.sqlanalytics.Constants import Constants
 from pyspark.sql.functions import col
@@ -36,7 +36,7 @@ dfToLoad.show()
 Dedicated SQL Table--&gt;Spark Dataframe
 </div>
 
-```
+```python
 dfToLoadUsingSQL = ( spark.read
                 # .option(Constants.SERVER, f"{mssparkutils.env.getWorkspaceName()}.sql.azuresynapse.net")
                 # .option(Constants.TEMP_FOLDER, f"abss://{temp_container_name}@{temp_storage_account}.dfs.core.windoes.net/{temp_base_dir}/{temp_sub_dir}>)
