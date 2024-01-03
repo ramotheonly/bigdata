@@ -1,8 +1,10 @@
 # Read from Dedicated SQL (internal) Table into a pyspark Dataframe
 
-<div class="mermaid">graph LR
+<pre>
+  <code class="language-mermaid">graph LR
 Dedicated SQL Query--&gt;Spark Dataframe
-</div>
+  </code>
+</pre>
 
 ```python
 import com.microsoft.spark.sqlanalytics
@@ -32,9 +34,11 @@ dfToLoad = ( spark.read
 dfToLoad.show()
 ```
 ## Using SQL
-<div class="language-mermaid">graph LR
+<pre>
+  <code class="language-mermaid">graph LR
 Dedicated SQL Table--&gt;Spark Dataframe
-</div>
+  </code>
+</pre>
 
 ```python
 dfToLoadUsingSQL = ( spark.read
