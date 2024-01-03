@@ -2,7 +2,7 @@
 
 <pre>
   <code class="language-mermaid">graph LR
-Dedicated SQL Query--&gt;Spark Dataframe
+    DedicatedSQLQuery--&gt;SparkDataframe
   </code>
 </pre>
 
@@ -36,7 +36,7 @@ dfToLoad.show()
 ## Using SQL
 <pre>
   <code class="language-mermaid">graph LR
-Dedicated SQL Table--&gt;Spark Dataframe
+    DedicatedSQLTable--&gt;SparkDataframe
   </code>
 </pre>
 
