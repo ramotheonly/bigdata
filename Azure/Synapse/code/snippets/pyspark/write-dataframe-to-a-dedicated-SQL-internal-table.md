@@ -3,7 +3,7 @@
 ## Write to an Internal Table
 <pre>
   <code class="language-mermaid">graph LR
-Spark Dataframe--&gt;Dedicated SQL (Internal) Table
+    Spark-Dataframe --&gt; Dedicated-SQL-Internal-Table
   </code>
 </pre>
 
@@ -28,7 +28,7 @@ dfToWrite.write
 ## Write to an External Table
 <pre>
   <code class="language-mermaid">graph LR
-Spark Dataframe--&gt;Dedicated SQL (External) Table
+    Spark-Dataframe --&gt; Dedicated-SQL-External-Table
   </code>
 </pre>
 
