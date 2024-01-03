@@ -1,9 +1,11 @@
 # Write Pyspark Dataframe to Dedicated SQL Table 
 
 ## Write to an Internal Table
-<div class="mermaid">graph LR
+<pre>
+  <code class="language-mermaid">graph LR
 Spark Dataframe--&gt;Dedicated SQL (Internal) Table
-</div>
+  </code>
+</pre>
 
 ```python
 import com.microsoft.spark.sqlanalytics
@@ -24,9 +26,11 @@ dfToWrite.write
 
 
 ## Write to an External Table
-<div class="language-mermaid">graph LR
+<pre>
+  <code class="language-mermaid">graph LR
 Spark Dataframe--&gt;Dedicated SQL (External) Table
-</div>
+  </code>
+</pre>
 
 ```python
 write_to_path = "/path/to/ext/table"
